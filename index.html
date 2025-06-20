@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo a WhatsApp...</title>
+    <script>
+      const numero = new URLSearchParams(window.location.search).get("numero");
+      if (numero) {
+        window.location.href = "https://wa.me/" + numero;
+      } else {
+        document.write("Falta el parámetro ?numero=");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
